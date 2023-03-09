@@ -47,6 +47,7 @@ func main() {
 				switch questionParam {
 				case "q":
 					quit = true
+					ClearScreen()
 				case "":
 					continue
 				case "h":
@@ -61,5 +62,6 @@ func main() {
 			}
 		},
 	}
-	log.Fatal(rootCmd.Execute())
+	// log.Fatal(rootCmd.Execute())
+	rootCmd.Execute()
 }
